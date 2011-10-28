@@ -880,7 +880,7 @@ function stringrposFlagged($sHaystack, $sNeedle) {
 }
 
 function cutTextFlagged($text, $lenght = 25) {
-    $newText = substr($text, 0, $lenght);
+    $newText = mb_substr($text, 0, $lenght);
     if ($text > $newText) {
         $newText .= '...';
     }
