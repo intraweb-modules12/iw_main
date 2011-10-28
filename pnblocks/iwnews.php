@@ -105,8 +105,6 @@ function iw_main_iwnewsblock_display($row) {
             'chars' => 15));
     }
 
-
-
     $sv = pnModFunc('iw_main', 'user', 'genSecurityValue');
     $news = pnModFunc('iw_main', 'user', 'userGetVar', array('uid' => $uid,
         'name' => 'news',
